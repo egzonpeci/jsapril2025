@@ -83,8 +83,15 @@ document.writeln("<h2>" + (val_1 > 2 && val2 > 4) + "</h2>")
 document.writeln("<h2>" + (val_1 > 2 || val2 > 4) + "</h2>")
 
 //opert. logjike not(jo) !
+document.writeln("<h6>" + (!(a > 1)) + "</h6>");
 
-document.writeln("<h6>" + (!(a > 1)) + "</h6>")
+
+// let rez_1 = kushti ? true : false;
+
+let rez_2 = !(7 > 90) ? "Vlera e sakte" : "Vlere jo e sakte";
+document.writeln("<h2>Rez: " + rez_2 + "</h2>");
+
+
 
 
 
