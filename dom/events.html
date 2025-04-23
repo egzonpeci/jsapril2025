@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p ondblclick="dblFunction()">Paragrafi</p>
+    <select name="" id="" onchange="GetIdFromCities()">
+
+        <option value="">Zgjedh qytetin</option>
+        <option value="1">Prishtine</option>
+        <option value="2">Mitrovice</option>
+        <option value="3">Ferizaj</option>
+        <option value="4">Peje</option>
+    </select>
+    <input type="text" onkeypress="getCurrentValue(this)">
+    <input type="number" placeholder="Nr elementeve" onkeyup="generateHtmlElement(this)">
+    <div id="htmlelement">
+    </div>
+
+    <hr>
+
+    <input type="text" id="val_a" placeholder="Vlera a">
+    <input type="text" id="val_b" placeholder="Vlera b">
+
+    <select name="" id="operator">
+        <option value="">--Zgjedh Operatorin--</option>
+        <option value="+">Mbledhje</option>
+        <option value="-">Zbritje</option>
+        <option value="x">Shumezim</option>
+        <option value="/">Pjestim</option>
+    </select>
+
+    <button onclick="Calculation()">Kalkulo</button>
+    <h3>Rezultati: <span id="rez"></span> </h3>
+
+    <hr>
+
+    <h4 id="eventlistener">Elementi me EventListener</h4>
+
+
+
+    <script src="events.js"></script>
+</body>
+
+</html>
