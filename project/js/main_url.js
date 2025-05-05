@@ -1,0 +1,1 @@
+let main_api_url = "https://fakestoreapi.com";
