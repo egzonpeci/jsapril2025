@@ -10,23 +10,29 @@
 
 <body>
     <div class="container">
+         <a href="/project">Products</a>
         <div class="row mt-5 text-center">
             <div class="col-12 text-end">
                 <a href="cart.html" class=" text-decoration-none p-2 rounded-5 bg-danger text-white" id="nr_prod">0</a>
             </div>
-            <div class="col-md-12" id="tabs_categories">
-            </div>
         </div>
-        <hr class="mt-5">
-        <div class="row mt-3" id="products">
-        </div>
+        <hr>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#Img</th>
+                    <th>#Title</th>
+                    <th>#Quantity</th>
+                    <th>#Price</th>
+                </tr>
+            </thead>
+            <tbody id="prod_cart">
+
+            </tbody>
+        </table>
     </div>
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="js/main_url.js"></script>
-    <script src="js/categories.js"></script>
-    <script src="js/products.js"></script>
     <script src="js/cart.js"></script>
 </body>
 

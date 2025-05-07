@@ -20,6 +20,10 @@ $(document).ready(function () {
   </div>
     <div class="">
     <strong class="card-text">Category: ${obj.category}</strong>
+    <hr>
+    <div class="col-12 text-end">
+    <button id="${obj.id}" class="add-to-cart btn btn-primary btn-sm">Shto</button>
+    </div>
   </div>
   </div>
   </div>
@@ -33,7 +37,6 @@ $(document).ready(function () {
     let currentCategory = localStorage.getItem("category_name") == null ? "all" : localStorage.getItem("category_name");
 
     GetProductsByUrl("/products", currentCategory);
-
     resetAllClass();
 
     // filter products by category
@@ -42,7 +45,7 @@ $(document).ready(function () {
         let category = $(this).attr("category");
         $(this).removeClass("alert-info");
         $(this).addClass("alert-warning");
-        $(this).addClass("active");
+        let catId = $(this).attr("id");
         let urlForSearch = category == "all" ? `/products` : `/products/category/${category}`;
         GetProductsByUrl(`${urlForSearch}`, category);
     });
@@ -67,14 +70,8 @@ $(document).ready(function () {
         $(".search_by_category").removeClass("alert-warning");
         $(".search_by_category").removeClass("active");
     }
-
-
-    function setClassActive() {
-        let getActiveClass = $(".search_by_category");
-        console.log(getActiveClass);
-    }
-    
-    setClassActive();
 });
+
+
 
 
